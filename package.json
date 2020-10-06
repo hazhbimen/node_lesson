@@ -1,6 +1,7 @@
 {
   "name": "node_lesson",
   "version": "0.0.0",
+  "private": true,
   "description": "node_lesson",
   "main": "index.js",
   "scripts": {
