@@ -1,5 +1,6 @@
-./vscode
-./node_modules
-./asd
-./zxc
-./nb
+.vscode
+.node_modules
+.asd
+.zxc
+.nb
+.qw
