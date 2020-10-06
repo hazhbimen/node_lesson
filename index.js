@@ -18,6 +18,9 @@ async function readJson(url) {
 
 
 console.log('asdasdasd');
+console.log('asdasdasd');
+console.log('asdasdasd');
+
 
 
 
