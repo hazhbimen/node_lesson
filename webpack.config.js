@@ -30,6 +30,27 @@ module.exports = {
                         presets: ['@babel/preset-env']
                     }
                 }
+            },
+            {
+                test: /\.s[ac]ss$/i,
+                use: [
+                    'style-loader',
+                    'css-loader',
+                    'sass-loader',
+                ],
+            },
+            {
+                test: /\.(gif|png|jpe?g|svg)$/i,
+                use: [
+                    'file-loader',
+                    {
+                        loader: 'image-webpack-loader',
+                        options: {
+                            bypassOnDebug: true,
+                            disable: true,
+                        },
+                    },
+                ],
             }
         ]
     },
@@ -49,6 +70,9 @@ module.exports = {
         open: true
     },
     optimization: {
+        splitChunks: {
+            chunks: 'all',
+        },
         minimize: true,
         minimizer: [
             new CssMinimizerPlugin(),
