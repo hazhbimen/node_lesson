@@ -1,0 +1,16 @@
+body {
+    background-color: #333333;
+    width: 100vw;
+    height: 100vh;
+    color: white;
+}
+
+.block {
+    color: white;
+    background-color: thistle;
+    font-size: 50px;
+}
+
+ul {
+    margin: 100px;
+}

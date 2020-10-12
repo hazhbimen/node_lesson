@@ -1,8 +1,13 @@
-'use strict';
+'use strict'
 
-const fs = require('fs');
+const Component = require('./Component');
+import './reset.css';
+import './style.css';
 
-console.log('test');
-
+const root = document.getElementById('root');
+const div = document.createElement('div');
+div.textContent = 'HELLO!';
+div.classList.add('block');
+root.append(div);
 
 
